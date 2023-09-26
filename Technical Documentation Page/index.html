@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação Técnica JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>
+                <h1>Documentação JS</h1>
+            </header>
+            <a class="nav-link" href="#Introdução">
+                </h4>Introdução</h4>
+            </a>
+
+            <a class="nav-link" href="#Olá_Mundo">
+                <h4>Olá Mundo</h4>
+            </a>
+
+            <a class="nav-link" href="#Variáveis">
+                <h4>Variáveis</h4>
+            </a>
+
+            <a class="nav-link" href="#Declarando_Variáveis">
+                <h4>Declarando Variáveis</h4>
+            </a>
+
+            <a class="nav-link" href="#Constantes">
+                <h4>Constantes</h4>
+            </a>
+        </nav>
+
+        <section class="main-section" id="Introdução">
+            <header>
+                <h2>Introdução</h2>
+            </header>
+            <section>
+                <p>JavaScript é uma linguagem de script multiplataforma orientada a objetos. É uma linguagem pequena e
+                    leve. Dentro de um ambiente host (por exemplo, um navegador web), o JavaScript pode ser conectado
+                    aos objetos de seu ambiente para fornecer controle programático sobre eles.</p>
+                <p>JavaScript contém uma biblioteca padrão de objetos, como Array, Date e Math, e um conjunto básico de
+                    elementos de linguagem, como operadores, estruturas de controle e instruções. O JavaScript principal
+                    pode ser estendido para diversos propósitos, complementando-o com objetos adicionais; por exemplo:
+                </p>
+                <ul>
+                    <li>O JavaScript do lado do cliente estende a linguagem principal, fornecendo objetos para controlar
+                        um navegador e seu Document Object Model (DOM). Por exemplo, as extensões do lado do cliente
+                        permitem que um aplicativo coloque elementos em um formulário HTML e responda a eventos do
+                        usuário, como cliques do mouse, entrada de formulário e navegação na página.</li>
+                    <li>O JavaScript do lado do servidor estende a linguagem principal, fornecendo objetos relevantes
+                        para a execução do JavaScript em um servidor. Por exemplo, as extensões do lado do servidor
+                        permitem que um aplicativo se comunique com um banco de dados, forneça continuidade de
+                        informações de uma invocação para outra do aplicativo ou execute manipulações de arquivos em um
+                        servidor.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="main-section" id="Olá_Mundo">
+            <header>
+                <h2>Olá Mundo</h2>
+            </header>
+            <section>
+                <p>Para começar a escrever JavaScript, abra o Scratchpad e escreva seu primeiro código JavaScript "Olá,
+                    mundo":
+                <p id="p-recuo"><code>function greetMe(yourName) { alert("Olá " + yourName); }</p>
+                    <p id="p-recuo">greetMe("Mundo!")</p></code>
+                    Selecione o código no bloco e pressione Ctrl+R para vê-lo se desenrolar em seu navegador!</p>
+            </section>
+        </section>
+
+        <section class="main-section" id="Variáveis">
+            <header>
+                <h2>Variáveis</h2>
+            </header>
+            <section>
+                <p>Você usa variáveis como nomes simbólicos para valores em seu aplicativo. Os nomes das variáveis,
+                    chamados identificadores, obedecem a certas regras.</p>
+                <p>Um identificador JavaScript deve começar com uma letra, sublinhado (_) ou cifrão ($); os caracteres
+                    subsequentes também podem ser dígitos (0-9). Como o JavaScript diferencia maiúsculas de minúsculas,
+                    as letras incluem os caracteres de "A" a "Z" (maiúsculas) e os caracteres de "a" a "z" (minúsculas).
+                </p>
+                <p>Você pode usar letras ISO 8859-1 ou Unicode, como å e ü, em identificadores. Você também pode usar as
+                    sequências de escape Unicode como caracteres em identificadores. Alguns exemplos de nomes legais são
+                    Number_hits, temp99 e _name.</p>
+            </section>
+        </section>
+
+        <section class="main-section" id="Declarando_Variáveis">
+            <header>
+                <h2>Declarando Variáveis</h2>
+            </header>
+            <section>
+                <p>Você pode declarar uma variável de três maneiras:</p>
+                <ol>
+                    <li>Com a palavra-chave var.
+                        <p>Por exemplo: <code>var x = 42</code></p>
+                    </li>
+                    <li>Com a palavra-chave let.
+                        <p>Por exemplo: <code>let x = 13</code></p>
+                    </li>
+                    <li>Simplesmente atribuindo-lhe um valor.
+                        <p>Por exemplo: <code>var x = 42</code></p>
+                    </li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="main-section" id="Constantes">
+            <header>
+                <h2>Constantes</h2>
+            </header>
+
+            <section>
+                <p>Você pode criar uma constante nomeada somente leitura com a palavra-chave const. A sintaxe de
+                    um
+                    identificador de constante é a mesma de um identificador de variável: ele deve começar com
+                    uma
+                    letra, sublinhado ou cifrão e pode conter caracteres alfabéticos, numéricos ou sublinhados.
+                </p>
+                <p id="p-recuo">Por exemplo: <code>const PI = 3.14;</code></p>
+                <p>Uma constante não pode alterar o valor por meio de atribuição ou ser declarada novamente enquanto o
+                    script está em execução. Ele deve ser inicializado com um valor. As regras de escopo para constantes
+                    são as mesmas para let bloquear variáveis de escopo. Se a palavra-chave const for omitida,
+                    presume-se que o identificador represente uma variável.</p>
+                <p>Você não pode declarar uma constante com o mesmo nome de uma função ou variável no mesmo
+                    escopo.
+                    Por
+                    exemplo:</p>
+                <p id="p-recuo"><code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5;
+                <p> //THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                <p>//statements }</code></p>
+            </section>
+        </section>
+
+    </main>
+    <br>
+    <footer>
+        Referência: https://technical-documentation-page.freecodecamp.rocks/
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen {
+    body{
+        background: rgb (5, 209, 46);
+    }
+}
+
+header {
+    text-decoration: underline;
+}
